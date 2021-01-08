@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15C1FF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnParametres"
+        android:layout_width="333dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/btnParamAcc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAquarium"
+        android:layout_width="333dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/btnAquaAcc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnParametres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="322dp"
+        android:layout_height="323dp"
+        android:contentDescription="@string/logo_acceuil"
+        app:layout_constraintBottom_toTopOf="@+id/btnAquarium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/Nom_Appli"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

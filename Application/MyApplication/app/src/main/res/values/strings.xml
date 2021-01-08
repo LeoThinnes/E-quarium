@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btnParamAcc">Paramétrages</string>
+    <string name="btnAquaAcc">Mon Aquarium</string>
+    <string name="logo_acceuil">logo acceuil</string>
+    <string name="Nom_Appli">E-quarium</string>
+    <string name="titreMenuParam">Paramétrage de votre aquarium : </string>
+    <string name="ParamtemperatureEau">Température de l\'eau</string>
+    <string name="ParamEclairage">Temps d\'eclairage</string>
+    <string name="ParamNourriture">Nourriture</string>
+    <string name="btnRetour">Retour</string>
+    <string name="titreMenuAqua">Informations de votre aquarium :</string>
+    <string name="btnInfoLumiere">Etat d\'éclairage</string>
+</resources>
