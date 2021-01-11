@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15C1FF"
+    tools:context=".Affichage_temperature">
+
+
+    <TextView
+        android:id="@+id/titreAffichage"
+        android:layout_width="355dp"
+        android:layout_height="108dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="L'eau de votre aquarium est à :"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEvolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/btnEvolution"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="28dp"
+        android:text="Voir l'évolution de la température"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMofifierParamètres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetourInfos"
+        android:layout_width="167dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="88dp"
+        android:text="Retour aux informations"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMofifierParamètres"
+        android:layout_width="165dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="88dp"
+        android:text="Modifier les paramètres"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
