@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15C1FF"
+    tools:context=".MenuParametres"
+    android:screenOrientation="portrait">
+
+    <TextView
+        android:id="@+id/titreParametresTemp"
+        android:layout_width="375dp"
+        android:layout_height="143dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/titreParamTemp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetourPasFait"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/btnRetour"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/txtBtnValider"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="225dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/InfoTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.014"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="252dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/TempMoy"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreParametresTemp" />
+
+    <TextView
+        android:id="@+id/degCels"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/c"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/InfoTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:text="@string/infosTemp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

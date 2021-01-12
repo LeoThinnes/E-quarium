@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15C1FF"
+    tools:context=".PasEncoreFait"
+    android:screenOrientation="portrait">
+
+    <TextView
+        android:id="@+id/txtEnDev"
+        android:layout_width="329dp"
+        android:layout_height="97dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtEnDev"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetourPasFait"
+        android:layout_width="120dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/btnRetour"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

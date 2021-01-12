@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#15C1FF"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:screenOrientation="portrait">
 
     <Button
         android:id="@+id/btnParametres"

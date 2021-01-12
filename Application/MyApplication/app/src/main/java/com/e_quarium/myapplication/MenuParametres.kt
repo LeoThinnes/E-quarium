@@ -12,9 +12,27 @@ class MenuParametres : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetour)
+        val btnRetour = findViewById<Button>(R.id.btnRetourPasFait)
         btnRetour.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
+            finish()
+        }
+
+        val btnInfoTemp = findViewById<Button>(R.id.btnInfosTemp)
+        btnInfoTemp.setOnClickListener{
+            val intent = Intent(this, ParametreTemperature::class.java)
+            startActivity(intent)
+        }
+
+        val btnParametreLumiere = findViewById<Button>(R.id.btnInfoLumiere)
+        btnParametreLumiere.setOnClickListener {
+            val intent = Intent(this, PasEncoreFait::class.java)
+            startActivity(intent)
+        }
+
+        val btnNourriture = findViewById<Button>(R.id.btnParametreNourriture)
+        btnNourriture.setOnClickListener {
+            val intent = Intent(this, PasEncoreFait::class.java)
             startActivity(intent)
         }
     }

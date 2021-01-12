@@ -11,4 +11,14 @@
     <string name="btnRetour">Retour</string>
     <string name="titreMenuAqua">Informations de votre aquarium :</string>
     <string name="btnInfoLumiere">Etat d\'éclairage</string>
+    <string name="TempMoy">Température Moyenne :</string>
+    <string name="titreParamTemp">Entrez la température moyenne de votre aquarium :</string>
+    <string name="txtBtnValider">Valider</string>
+    <string name="c">°C</string>
+    <string name="infosTemp">Température moyenne à 0.5°C près</string>
+    <string name="txtBtnModifParam">Modifier les paramètres</string>
+    <string name="txtBtnRetourInfos">Retour aux informations</string>
+    <string name="txtBtnEvolutionTemp">Voir l\'évolution de la température</string>
+    <string name="titreAfficheTemp">L\'eau de votre aquarium est à :</string>
+    <string name="txtEnDev">Cette fonctionnalité est en développement.</string>
 </resources>
