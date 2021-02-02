@@ -26,8 +26,13 @@ class affichage_temperature : AppCompatActivity() {
         }
 
         var temp = findViewById<TextView>(R.id.temp)
+<<<<<<< HEAD
         temp.setText("53")
     }  
+=======
+        temp.setText("24")
+    }
+>>>>>>> b1ddf2a41849e5ccc6990ad98b966085200f38d7
 
 
 }
