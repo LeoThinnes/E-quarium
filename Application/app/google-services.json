@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "376656576394",
+    "firebase_url": "https://monprojet-4763a-default-rtdb.firebaseio.com",
+    "project_id": "monprojet-4763a",
+    "storage_bucket": "monprojet-4763a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376656576394:android:cf0f2ade8631d275ae1273",
+        "android_client_info": {
+          "package_name": "com.e_quarium.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376656576394-pc8dhp422stdvm4a4jugkrola965bkov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDabEekEUcaACQ3lkokSYx6eqfX0Pd8TLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376656576394-pc8dhp422stdvm4a4jugkrola965bkov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

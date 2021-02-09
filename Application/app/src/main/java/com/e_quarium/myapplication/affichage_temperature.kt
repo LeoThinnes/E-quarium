@@ -1,12 +1,18 @@
 package com.e_quarium.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.database.FirebaseDatabase
+
+
 
 class affichage_temperature : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_affichage_temperature)
@@ -25,14 +31,13 @@ class affichage_temperature : AppCompatActivity() {
             startActivity(intent)
         }
 
-        var temp = findViewById<TextView>(R.id.temp)
-<<<<<<< HEAD
-        temp.setText("53")
-    }  
-=======
-        temp.setText("24")
+        val temperature = findViewById<TextView>(R.id.temp)
+        temperature.setText("26")
+
+
+
     }
->>>>>>> b1ddf2a41849e5ccc6990ad98b966085200f38d7
 
 
 }
+

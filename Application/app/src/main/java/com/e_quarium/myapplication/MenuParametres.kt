@@ -3,6 +3,7 @@ package com.e_quarium.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 
 class MenuParametres : AppCompatActivity() {
@@ -36,4 +37,7 @@ class MenuParametres : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun envoieDonnées(view: View) {}
+    fun envoieDonnees(view: View) {}
 }
