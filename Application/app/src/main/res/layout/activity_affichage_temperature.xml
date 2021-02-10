@@ -70,19 +70,19 @@
 
     <TextView
         android:id="@+id/temp"
-        android:layout_width="98dp"
-        android:layout_height="78dp"
+        android:layout_width="181dp"
+        android:layout_height="66dp"
         android:gravity="center_horizontal"
         android:text=""
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="60sp"
+        android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/btnEvol"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titreAffichage"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.529" />
 
     <TextView
         android:id="@+id/temp2"
@@ -95,9 +95,21 @@
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/btnEvol"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titreAffichage"
         app:layout_constraintVertical_bias="0.509" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="276dp"
+        android:layout_height="505dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginRight="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261"
+        app:srcCompat="@drawable/normal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
