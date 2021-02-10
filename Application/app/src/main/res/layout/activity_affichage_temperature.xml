@@ -70,19 +70,19 @@
 
     <TextView
         android:id="@+id/temp"
-        android:layout_width="181dp"
-        android:layout_height="66dp"
+        android:layout_width="124dp"
+        android:layout_height="75dp"
         android:gravity="center_horizontal"
         android:text=""
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="45sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/btnEvol"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titreAffichage"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.524" />
 
     <TextView
         android:id="@+id/temp2"

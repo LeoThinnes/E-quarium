@@ -139,15 +139,5 @@
         app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="188dp"
-        android:layout_marginRight="188dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
