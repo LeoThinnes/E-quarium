@@ -13,12 +13,11 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 
-
-
 class ParametreTemperature : AppCompatActivity() {
 
     var database = FirebaseDatabase.getInstance()
     var myRef = database.getReference("test2")
+    var Ref = database.getReference("test")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_parametre_temperature)
@@ -31,11 +30,16 @@ class ParametreTemperature : AppCompatActivity() {
             finish()
         }
 
-        val editText:String? = findViewById<EditText>(R.id.editTextNumber).toString()
+
 
         val btnValider = findViewById<Button>(R.id.btnValider)
         btnValider.setOnClickListener{
-            myRef.setValue(23)
+            val tempMoy = findViewById<EditText>(R.id.editTextNumber)
+            var temperatureMoyenne = tempMoy.text.toString()
+            val ecart = findViewById<EditText>(R.id.editTextNumber2)
+            var ecarTemp = ecart.text.toString()
+            myRef.setValue(temperatureMoyenne)
+            Ref.setValue(ecarTemp)
         }
 
     }
