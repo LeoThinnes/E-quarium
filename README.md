@@ -6,3 +6,5 @@ Pour ce faire nous devons mettre en place un système sur Raspberry qui gère ph
 Les langages utilisés pour ce projet sont le python et le kotlin.
 
 Ce projet est réalisé avec : [Aymeric Bachelet](https://github.com/AymericBachelet), [Samuel Goupil](https://github.com/samuelGoupil) et [Etienne Couzon](https://github.com/EtienneCOUZON)
+
+Projet en cours de réalisation.
