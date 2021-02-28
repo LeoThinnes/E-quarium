@@ -8,3 +8,7 @@ Les langages utilisés pour ce projet sont le python et le kotlin.
 Ce projet est réalisé avec : [Aymeric Bachelet](https://github.com/AymericBachelet), [Samuel Goupil](https://github.com/samuelGoupil) et [Etienne Couzon](https://github.com/EtienneCOUZON)
 
 Projet en cours de réalisation.
+
+# Voici quelques maquettes de l'application : 
+
+![](Ressources/maquettes/menu_principal.png) ![](Ressources/maquettes/température_ok.png)
