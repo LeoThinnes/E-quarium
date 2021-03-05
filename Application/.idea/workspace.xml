@@ -22,7 +22,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_API_30]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -42,15 +42,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-02-10T16:19:49.913Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-03-05T13:44:17.381Z" />
     <property name="ResourceManagerPrefKey.ResourceType" value="NAVIGATION" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SelectDeploymentTargetsDialog.selectedDevices" value="Pixel_3a_API_30_x86" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/androidTest/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="D:/IUT/A2/S4/Android/tp2" />
     <property name="project.structure.last.edited" value="Build Variants" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -74,6 +74,7 @@
       <recent name="com.e_quarium.myapplication" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thinnes4\Desktop\Application\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\thinnes4\Desktop\MyApplication\app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -210,9 +211,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="560" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1024.0.1024.728@0.0.1536.824" timestamp="1612429660103" />
-    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1610190151356">
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1614950294605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/-1024.0.1024.728@0.0.1536.824" timestamp="1614950294605" />
+    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1614950403574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824/-1024.0.1024.728@0.0.1536.824" timestamp="1614950403574" />
     <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1610190151356" />
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1610372176898">
       <screen x="0" y="0" width="1536" height="824" />
@@ -226,10 +232,12 @@
     <state x="614" y="202" key="AndroidCreateXmlResourceDialog/0.0.1536.824/-1280.0.1280.984@0.0.1536.824" timestamp="1610385122394" />
     <state x="614" y="202" key="AndroidCreateXmlResourceDialog/0.0.1536.824/-1920.7.1920.1040@0.0.1536.824" timestamp="1610529426651" />
     <state x="614" y="202" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1610358023951" />
-    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1612973753829">
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1614951313300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824/-1024.0.1024.728@0.0.1536.824" timestamp="1612973753829" />
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824/-1024.0.1024.728@0.0.1536.824" timestamp="1614951313300" />
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824/-1280.0.1280.984@0.0.1536.824" timestamp="1614876466335" />
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614071527444" />
     <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610360765578" />
     <state width="1491" height="209" key="GridCell.Tab.0.bottom" timestamp="1612978692219">
       <screen x="0" y="0" width="1536" height="824" />
@@ -255,9 +263,10 @@
     <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1024.0.1024.728@0.0.1536.824" timestamp="1612973886710" />
     <state width="1491" height="209" key="GridCell.Tab.0.right/0.0.1536.824/-1280.0.1280.984@0.0.1536.824" timestamp="1612978692219" />
     <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610126784011" />
-    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1612628089129">
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1614947943923">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824/-1024.0.1024.728@0.0.1536.824" timestamp="1614947943923" />
     <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824/-1280.0.1280.984@0.0.1536.824" timestamp="1612628089129" />
     <state x="471" y="221" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog" timestamp="1610137441450">
       <screen x="0" y="0" width="1536" height="824" />
