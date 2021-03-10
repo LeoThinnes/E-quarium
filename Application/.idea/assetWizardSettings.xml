@@ -111,7 +111,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\thinnes4\Desktop\E-quarium\Ressources\images\normal.png" />
+                                                <entry key="imagePath" value="C:\Users\thinnes4\Desktop\E-quarium\Ressources\images\logo.png" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -143,8 +143,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="normal" />
-                                      <entry key="outputName" value="ic_normal" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="outputName" value="logo" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -27,7 +26,6 @@ class affichage_temperature : AppCompatActivity() {
 
         val btnRetourInfos = findViewById<Button>(R.id.btnRetourInfos)
         btnRetourInfos.setOnClickListener{
-            val intent = Intent(this, MenuAquarium::class.java)
             finish()
         }
 

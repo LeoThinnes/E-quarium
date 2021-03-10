@@ -5,59 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#15C1FF"
-    tools:context=".MenuParametres" android:screenOrientation="portrait">
-
-    <TextView
-        android:id="@+id/titreParametresTemp"
-        android:layout_width="355dp"
-        android:layout_height="108dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:text="@string/titreMenuAqua"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInfosTemp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
+    tools:context=".changement_lumiere" android:screenOrientation="portrait">
 
     <Button
-        android:id="@+id/btnInfosTemp"
+        android:id="@+id/btnLumJaune"
         android:layout_width="333dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/ParamtemperatureEau"
-        app:backgroundTint="#2536B0"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInfoLumiere"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnInfoLumiere"
-        android:layout_width="333dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="24dp"
-        android:text="@string/btnInfoLumiere"
-        app:backgroundTint="#2536B0"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnParametreNourriture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnParametreNourriture"
-        android:layout_width="333dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="148dp"
-        android:text="@string/ParamNourriture"
+        android:layout_marginBottom="320dp"
+        android:text="Lumière Jaune"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:backgroundTint="#2536B0"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLumBleu"
+        android:layout_width="333dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="232dp"
+        android:text="Lumière Rouge"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLumOff"
+        android:layout_width="333dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="144dp"
+        android:text="Eteindre Lumière"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:backgroundTint="#2536B0"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="337dp"
+        android:layout_height="358dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLumJaune"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lamp" />
 
     <Button
         android:id="@+id/btnRetour"
@@ -72,4 +73,5 @@
         app:iconTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

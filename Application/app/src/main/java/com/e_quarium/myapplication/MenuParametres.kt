@@ -13,9 +13,8 @@ class MenuParametres : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetourPasFait)
+        val btnRetour = findViewById<Button>(R.id.btnRetour)
         btnRetour.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
             finish()
         }
 
@@ -38,6 +37,4 @@ class MenuParametres : AppCompatActivity() {
         }
     }
 
-    fun envoieDonnées(view: View) {}
-    fun envoieDonnees(view: View) {}
 }

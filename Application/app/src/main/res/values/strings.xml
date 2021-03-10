@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">E-quarium</string>
     <string name="btnParamAcc">Paramétrages</string>
     <string name="btnAquaAcc">Mon Aquarium</string>
     <string name="logo_acceuil">logo acceuil</string>
@@ -10,7 +10,7 @@
     <string name="ParamNourriture">Nourriture</string>
     <string name="btnRetour">Retour</string>
     <string name="titreMenuAqua">Informations de votre aquarium :</string>
-    <string name="btnInfoLumiere">Etat d\'éclairage</string>
+    <string name="btnInfoLumiere">éclairage</string>
     <string name="TempMoy">Température Moyenne :</string>
     <string name="titreParamTemp">Entrez la température moyenne de votre aquarium :</string>
     <string name="txtBtnValider">Valider</string>

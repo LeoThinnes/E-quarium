@@ -12,7 +12,7 @@ class PasEncoreFait : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetourPasFait)
+        val btnRetour = findViewById<Button>(R.id.btnRetour)
         btnRetour.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             finish()

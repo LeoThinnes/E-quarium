@@ -12,9 +12,8 @@ class MenuAquarium : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetourPasFait)
+        val btnRetour = findViewById<Button>(R.id.btnRetour)
         btnRetour.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
             finish()
         }
 
@@ -26,7 +25,7 @@ class MenuAquarium : AppCompatActivity() {
 
         val btnInfoEclairage = findViewById<Button>(R.id.btnInfoLumiere)
         btnInfoEclairage.setOnClickListener {
-            val intent = Intent(this, PasEncoreFait::class.java)
+            val intent = Intent(this, changement_lumiere::class.java)
             startActivity(intent)
         }
 
