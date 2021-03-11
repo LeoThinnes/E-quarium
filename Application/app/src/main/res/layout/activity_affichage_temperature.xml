@@ -20,42 +20,26 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEvol"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnEvol"
-        android:layout_width="333dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="168dp"
-        android:text="@string/txtBtnEvolutionTemp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:backgroundTint="#2536B0"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnMofifierParamètres"
-        android:layout_width="150dp"
-        android:layout_height="78dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="44dp"
+        android:id="@+id/boutonMofifierParametres"
+        android:layout_width="329dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="172dp"
         android:text="@string/txtBtnModifParam"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:backgroundTint="#2536B0"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnRetourInfos"
+        android:id="@+id/boutonRetourInfos"
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -69,39 +53,39 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/temp"
+        android:id="@+id/temperature"
         android:layout_width="124dp"
         android:layout_height="75dp"
+        android:layout_marginTop="188dp"
         android:gravity="center_horizontal"
         android:text=""
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEvol"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titreAffichage"
-        app:layout_constraintVertical_bias="0.524" />
+        app:layout_constraintTop_toBottomOf="@+id/titreAffichage" />
 
     <TextView
-        android:id="@+id/temp2"
+        android:id="@+id/degre"
         android:layout_width="98dp"
         android:layout_height="78dp"
+        android:layout_marginTop="184dp"
         android:gravity="center_horizontal"
         android:text="°C"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEvol"
+        app:layout_constraintBottom_toTopOf="@+id/boutonMofifierParametres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titreAffichage"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageThermometre"
         android:layout_width="276dp"
         android:layout_height="505dp"
         android:layout_marginEnd="196dp"
@@ -114,19 +98,21 @@
         app:layout_constraintVertical_bias="0.389" />
 
     <TextView
-        android:id="@+id/txtTemp"
+        android:id="@+id/informationTemperature"
         android:layout_width="345dp"
         android:layout_height="31dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEvol"
+        app:layout_constraintBottom_toTopOf="@+id/boutonMofifierParametres"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temp" />
+        app:layout_constraintTop_toBottomOf="@+id/temperature" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageDecors"
         android:layout_width="49dp"
         android:layout_height="43dp"
         app:layout_constraintBottom_toBottomOf="parent"

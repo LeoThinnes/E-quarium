@@ -1,14 +1,15 @@
 package com.e_quarium.myapplication
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.google.firebase.database.FirebaseDatabase
 
 class changement_lumiere : AppCompatActivity() {
+
+    //connexion a la base de données
     var database = FirebaseDatabase.getInstance()
-    var myRef = database.getReference("Lumiere")
+    var donnees = database.getReference("Lumiere")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,24 +17,27 @@ class changement_lumiere : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnJaune = findViewById<Button>(R.id.btnLumJaune)
-        val btnRouge = findViewById<Button>(R.id.btnLumBleu)
-        val btnOff = findViewById<Button>(R.id.btnLumOff)
-        val btnRetour = findViewById<Button>(R.id.btnRetour)
+        //recupération des identifiants
+        val boutonLumiereJaune = findViewById<Button>(R.id.boutonLumiereJaune)
+        val boutonLumiereRouge = findViewById<Button>(R.id.boutonLumiereRouge)
+        val boutonEteindreLumiere = findViewById<Button>(R.id.boutonEteindreLumiere)
+        val boutonRetour = findViewById<Button>(R.id.boutonRetour)
 
-        btnJaune.setOnClickListener {
-            myRef.setValue(1)
+        //envoie d'une valeur sur la base de données suivant le bouton cliqué
+        boutonLumiereJaune.setOnClickListener {
+            donnees.setValue(1)
         }
 
-        btnRouge.setOnClickListener {
-            myRef.setValue(2)
+        boutonLumiereRouge.setOnClickListener {
+            donnees.setValue(2)
         }
 
-        btnOff.setOnClickListener {
-            myRef.setValue(0)
+        boutonEteindreLumiere.setOnClickListener {
+            donnees.setValue(0)
         }
 
-        btnRetour.setOnClickListener {
+        //bouton de retour
+        boutonRetour.setOnClickListener {
             finish()
         }
     }

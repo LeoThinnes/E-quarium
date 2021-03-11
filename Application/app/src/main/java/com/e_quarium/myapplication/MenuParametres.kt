@@ -3,7 +3,6 @@ package com.e_quarium.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 
 class MenuParametres : AppCompatActivity() {
@@ -13,25 +12,30 @@ class MenuParametres : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetour)
-        btnRetour.setOnClickListener{
+        //recupération des identifiants
+        val boutonRetour = findViewById<Button>(R.id.boutonRetour)
+        val boutonParametresTemperature = findViewById<Button>(R.id.boutonParametresTemperature)
+        val boutonParametresLumiere = findViewById<Button>(R.id.boutonParametresLumiere)
+        val boutonParametresNourriture = findViewById<Button>(R.id.boutonParametresNourriture)
+
+
+        //retour
+        boutonRetour.setOnClickListener{
             finish()
         }
 
-        val btnInfoTemp = findViewById<Button>(R.id.btnInfosTemp)
-        btnInfoTemp.setOnClickListener{
+        //changement d'activité au click
+        boutonParametresTemperature.setOnClickListener{
             val intent = Intent(this, ParametreTemperature::class.java)
             startActivity(intent)
         }
 
-        val btnParametreLumiere = findViewById<Button>(R.id.btnInfoLumiere)
-        btnParametreLumiere.setOnClickListener {
+        boutonParametresLumiere.setOnClickListener {
             val intent = Intent(this, PasEncoreFait::class.java)
             startActivity(intent)
         }
 
-        val btnNourriture = findViewById<Button>(R.id.btnParametreNourriture)
-        btnNourriture.setOnClickListener {
+        boutonParametresNourriture.setOnClickListener {
             val intent = Intent(this, PasEncoreFait::class.java)
             startActivity(intent)
         }

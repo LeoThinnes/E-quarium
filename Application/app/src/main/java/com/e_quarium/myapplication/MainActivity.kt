@@ -14,14 +14,17 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnParametres = findViewById<Button>(R.id.btnParametres)
-        btnParametres.setOnClickListener{
+        //recupération des identifiants
+        val boutonParametres = findViewById<Button>(R.id.boutonParametres)
+        val boutonAquarium = findViewById<Button>(R.id.boutonAquarium)
+
+        //changement d'activité suivant le bouton cliqué
+        boutonParametres.setOnClickListener{
             val intent = Intent(this, MenuParametres::class.java)
             startActivity(intent)
         }
 
-        val btnAquarium = findViewById<Button>(R.id.btnAquarium)
-        btnAquarium.setOnClickListener{
+        boutonAquarium.setOnClickListener{
             val intent = Intent(this, MenuAquarium::class.java)
             startActivity(intent)
         }

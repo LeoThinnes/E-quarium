@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnRetour"
+        android:id="@+id/boutonRetour"
         android:layout_width="120dp"
         android:layout_height="66dp"
         android:layout_marginStart="40dp"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnValider"
+        android:id="@+id/boutonValider"
         android:layout_width="120dp"
         android:layout_height="66dp"
         android:layout_marginEnd="40dp"
@@ -53,7 +53,7 @@
         android:onClick="envoieDonnees"/>
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/temperatureMoyenneVoulue"
         android:layout_width="225dp"
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/ecartTemperature"
         android:layout_width="225dp"
         android:layout_height="46dp"
         android:layout_marginTop="15dp"
@@ -116,7 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureMoyenneVoulue"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -130,7 +130,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintStart_toEndOf="@+id/temperatureMoyenneVoulue"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
@@ -142,7 +142,7 @@
         android:layout_marginTop="12dp"
         android:text="@string/c"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintStart_toEndOf="@+id/ecartTemperature"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 

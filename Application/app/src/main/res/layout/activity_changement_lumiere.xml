@@ -8,7 +8,7 @@
     tools:context=".changement_lumiere" android:screenOrientation="portrait">
 
     <Button
-        android:id="@+id/btnLumJaune"
+        android:id="@+id/boutonLumiereJaune"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="320dp"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnLumBleu"
+        android:id="@+id/boutonLumiereRouge"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="232dp"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnLumOff"
+        android:id="@+id/boutonEteindreLumiere"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="144dp"
@@ -53,7 +53,7 @@
         android:id="@+id/imageView4"
         android:layout_width="337dp"
         android:layout_height="358dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLumJaune"
+        app:layout_constraintBottom_toTopOf="@+id/boutonLumiereJaune"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,7 +61,7 @@
         app:srcCompat="@drawable/lamp" />
 
     <Button
-        android:id="@+id/btnRetour"
+        android:id="@+id/boutonRetour"
         android:layout_width="120dp"
         android:layout_height="66dp"
         android:layout_marginStart="40dp"

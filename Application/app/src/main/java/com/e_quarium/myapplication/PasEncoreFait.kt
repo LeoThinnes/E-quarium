@@ -1,6 +1,5 @@
 package com.e_quarium.myapplication
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,9 +11,11 @@ class PasEncoreFait : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetour)
-        btnRetour.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+        //récupération des identifiants
+        val boutonRetour = findViewById<Button>(R.id.boutonRetour)
+
+        //retour
+        boutonRetour.setOnClickListener{
             finish()
         }
     }

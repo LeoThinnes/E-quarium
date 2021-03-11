@@ -9,7 +9,7 @@
     android:screenOrientation="portrait">
 
     <Button
-        android:id="@+id/btnParametres"
+        android:id="@+id/boutonParametres"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="100dp"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnAquarium"
+        android:id="@+id/boutonAquarium"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="36dp"
@@ -30,7 +30,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:backgroundTint="#2536B0"
         app:cornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnParametres"
+        app:layout_constraintBottom_toTopOf="@+id/boutonParametres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,7 +41,7 @@
         android:layout_width="322dp"
         android:layout_height="323dp"
         android:contentDescription="@string/logo_acceuil"
-        app:layout_constraintBottom_toTopOf="@+id/btnAquarium"
+        app:layout_constraintBottom_toTopOf="@+id/boutonAquarium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"

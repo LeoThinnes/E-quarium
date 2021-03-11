@@ -12,25 +12,29 @@ class MenuAquarium : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetour)
-        btnRetour.setOnClickListener{
+        //recupération des identifiants
+        val boutonRetour = findViewById<Button>(R.id.boutonRetour)
+        val boutonAffichageTemperature = findViewById<Button>(R.id.boutonParametresTemperature)
+        val boutonEclairage = findViewById<Button>(R.id.boutonParametresLumiere)
+        val boutonNourriture = findViewById<Button>(R.id.boutonParametresNourriture)
+
+        //fermeture de l'activité au click (retour)
+        boutonRetour.setOnClickListener{
             finish()
         }
 
-        val btnAffichage = findViewById<Button>(R.id.btnInfosTemp)
-        btnAffichage.setOnClickListener {
+        //changement d'activité suivant le bouton cliqué
+        boutonAffichageTemperature.setOnClickListener {
             val intent = Intent(this, affichage_temperature::class.java)
             startActivity(intent)
         }
 
-        val btnInfoEclairage = findViewById<Button>(R.id.btnInfoLumiere)
-        btnInfoEclairage.setOnClickListener {
+        boutonEclairage.setOnClickListener {
             val intent = Intent(this, changement_lumiere::class.java)
             startActivity(intent)
         }
 
-        val btnNourriture = findViewById<Button>(R.id.btnParametreNourriture)
-        btnNourriture.setOnClickListener {
+        boutonNourriture.setOnClickListener {
             val intent = Intent(this, PasEncoreFait::class.java)
             startActivity(intent)
         }

@@ -18,38 +18,38 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInfosTemp"
+        app:layout_constraintBottom_toTopOf="@+id/boutonParametresTemperature"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.155" />
 
     <Button
-        android:id="@+id/btnInfosTemp"
+        android:id="@+id/boutonParametresTemperature"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="28dp"
         android:text="@string/ParamtemperatureEau"
         app:backgroundTint="#2536B0"
         app:cornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInfoLumiere"
+        app:layout_constraintBottom_toTopOf="@+id/boutonParametresLumiere"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnInfoLumiere"
+        android:id="@+id/boutonParametresLumiere"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="24dp"
         android:text="@string/ParamEclairage"
         app:backgroundTint="#2536B0"
         app:cornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnParametreNourriture"
+        app:layout_constraintBottom_toTopOf="@+id/boutonParametresNourriture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnParametreNourriture"
+        android:id="@+id/boutonParametresNourriture"
         android:layout_width="333dp"
         android:layout_height="66dp"
         android:layout_marginBottom="148dp"
@@ -61,7 +61,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnRetour"
+        android:id="@+id/boutonRetour"
         android:layout_width="120dp"
         android:layout_height="66dp"
         android:layout_marginBottom="48dp"

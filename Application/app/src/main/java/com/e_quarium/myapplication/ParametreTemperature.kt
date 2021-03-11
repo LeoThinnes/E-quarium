@@ -9,30 +9,32 @@ import com.google.firebase.database.FirebaseDatabase
 
 class ParametreTemperature : AppCompatActivity() {
 
+    //connexion a la base de données
     var database = FirebaseDatabase.getInstance()
-    var myRef = database.getReference("ParamTemp")
+    var donnees = database.getReference("ParamTemp")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_parametre_temperature)
 
-
         supportActionBar?.hide()
 
-        val btnRetour = findViewById<Button>(R.id.btnRetour)
-        btnRetour.setOnClickListener{
+        //recupération des identifiants
+        val boutonRetour = findViewById<Button>(R.id.boutonRetour)
+        val boutonValider = findViewById<Button>(R.id.boutonValider)
+        val temperatureMoyenneVoulue = findViewById<EditText>(R.id.temperatureMoyenneVoulue)
+        val ecartTemperature = findViewById<EditText>(R.id.ecartTemperature)
+
+
+
+        boutonRetour.setOnClickListener{
             finish()
         }
 
-
-
-        val btnValider = findViewById<Button>(R.id.btnValider)
-        btnValider.setOnClickListener{
-            val tempMoy = findViewById<EditText>(R.id.editTextNumber)
-            var temperatureMoyenne = tempMoy.text.toString()
-            val ecart = findViewById<EditText>(R.id.editTextNumber2)
-            var ecarTemp = ecart.text.toString()
-            myRef.child("tempVoulue").setValue(temperatureMoyenne)
-            myRef.child("ecart").setValue(ecarTemp)
+        boutonValider.setOnClickListener{
+            var textTemperatureMoyenne = temperatureMoyenneVoulue.text.toString()
+            var textEcartTemperature = ecartTemperature.text.toString()
+            donnees.child("tempVoulue").setValue(textTemperatureMoyenne)
+            donnees.child("ecart").setValue(textEcartTemperature)
         }
 
     }
