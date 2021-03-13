@@ -1,31 +1,36 @@
 import time
-import datetime
+import pyrebase
+config = {
+  "apiKey": "AIzaSyCG6-p16Z2AvMCJH6EaL0Zh_jLiSl8Sjsk",
+  "authDomain": "monprojet-4763a.firebaseapp.com",
+  "databaseURL": "https://monprojet-4763a-default-rtdb.firebaseio.com/",
+  "storageBucket": "monprojet-4763a.appspot.com"
+}
+
+firebase = pyrebase.initialize_app(config)
+database = firebase.database()
 
 #Lecture du fichier à l'emplacement
 def lireFichier (emplacement) :
-    fichierTemperature = open(emplacement)
-    contenuFichier = fichierTemperature.read()
-    fichierTemperature.close()
-    return contenuFichier
+        fichierTemperature = open(emplacement)
+        contenuFichier = fichierTemperature.read()
+        fichierTemperature.close()
+        return contenuFichier
 
 #Récupération de la température dans le fichier
 def recupererTemperature (contenuFichier) :
-    secondeLigne = contenuFichier.split("\n")[1]
-    temperatureData = secondeLigne.split(" ")[9]
-    temperature = float(temperatureData[2:])
-    temperature = temperature / 1000
-    return temperature
+        secondeLigne = contenuFichier.split("\n")[1]
+        temperatureData = secondeLigne.split(" ")[9]
+        temperature = float(temperatureData[2:])
+        temperature = temperature/1000
+        temperature = round(temperature,1)
+        return temperature
 
-#Sauvegarde de la température
-def sauvegarde (temperature, date, emplacement) :
-    fichierSauvegarde = open(emplacement, "a")
-    fichierSauvegarde.write(str(date)+"   ")
-    fichierSauvegarde.write(str(temperature)+'\r\n')
-    fichierSauvegarde.close()
-    
+#Envoi de la température à la base de donnée
 while True :
-    date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    contenuFichier = lireFichier("/sys/bus/w1/devices/28-xxxxxxxx/w1_slave")
+    contenuFichier = lireFichier("/sys/bus/w1/devices/28-0414692f33ff/w1_sl$
     temperature = recupererTemperature(contenuFichier)
-    sauvegarde(temperature, date, "Temperature.txt")
-    time.sleep(60)
+    database.child("ParamTemp/tempActuelle").set(temperature)
+    time.sleep(6)
+
+
