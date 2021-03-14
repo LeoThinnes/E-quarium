@@ -28,7 +28,7 @@ def recupererTemperature (contenuFichier) :
 
 #Envoi de la température à la base de donnée
 while True :
-    contenuFichier = lireFichier("/sys/bus/w1/devices/28-0414692f33ff/w1_sl$
+    contenuFichier = lireFichier("/sys/bus/w1/devices/28-0414692f33ff/w1_slave")
     temperature = recupererTemperature(contenuFichier)
     database.child("ParamTemp/tempActuelle").set(temperature)
     time.sleep(6)
